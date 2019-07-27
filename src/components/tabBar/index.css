@@ -1,0 +1,70 @@
+#tabBar {
+  border-top: 2px solid #ccc7c7;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+#tabBar #active {
+  color: red;
+}
+
+#tabBar #cinema.router-link-active div {
+  background: url("../../assets/cinema-red.png") no-repeat center;
+  background-size: 40px;
+}
+
+#tabBar #cinema.router-link-active span {
+  color: red;
+}
+
+#tabBar #my.router-link-active div {
+  background: url("../../assets/my-red.png") no-repeat center;
+  background-size: 40px;
+}
+
+#tabBar #my.router-link-active span {
+  color: red;
+}
+
+#tabBar #movie.router-link-active div {
+  background: url("../../assets/movie-red.png") no-repeat center;
+  background-size: 40px;
+}
+
+#tabBar #movie.router-link-active span {
+  color: red;
+}
+
+#tabBar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tabBar div span {
+  font-size: 26px;
+}
+
+#tabBar div .imgCin, #tabBar div .imgMy, #tabBar div .imgMov {
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/cinema.png") no-repeat center;
+  background-size: 40px;
+}
+
+#tabBar div .imgMy {
+  background: url("../../assets/my.png") no-repeat center;
+  background-size: 40px;
+}
+
+#tabBar div .imgMov {
+  background: url("../../assets/movie.png") no-repeat center;
+  background-size: 40px;
+}

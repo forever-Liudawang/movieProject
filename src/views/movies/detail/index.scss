@@ -1,0 +1,82 @@
+@keyframes run {
+    0%{ 
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
+.detailContainer{
+    animation: run 1s cubic-bezier(0.63, 0.14, 0.49, 0.9);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 4 !important;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    .main{
+        position: absolute;
+        top: 100px;
+        width:100%;
+        overflow: hidden;
+
+        .movieHeader{
+            padding: 30px 20px;
+            z-index:10;
+            // background: linear-gradient(to right, rgb(197, 188, 188) , rgb(190, 116, 94));
+            background-image: url('https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2594954460,618903872&fm=27&gp=0.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            .img{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+            .movieDetail{
+                margin-left: 0;
+                padding-left: 25px;
+                h3{
+                    color: #fff;
+                    margin: 0;
+                }
+                li{
+                    list-style: none;
+                    color: rgb(223, 217, 217);
+
+                }
+            }
+        }
+        .movieIntro{
+            padding: 10px 20px;
+            font-size: 28px;
+            color: rgb(105, 102, 102);
+            line-height: 34px;
+            text-indent: 48px;
+        }
+        .swiper-container {
+            // width: 100%;
+            height: 200px;
+            .swiper-slide{
+                width:300px;
+                margin-left: 20px;
+                img{
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+    .back{
+        position: absolute;
+        width: 40px;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+}

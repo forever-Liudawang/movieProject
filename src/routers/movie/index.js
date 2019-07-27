@@ -1,0 +1,41 @@
+export default {
+    path:'/movie',
+    name:"movie",
+    component:()=>import("@/views/movies"),
+    children:[
+        {
+            path:'/movie/city',
+            name:'city',
+            component:()=>import("@/components/city")
+        },
+        {
+            path:'/movie/search',
+            name:'search',
+            component:()=>import("@/components/search")
+        },
+        {
+            path:'/movie/willShow',
+            name:'willShow',
+            component:()=>import("@/components/willShow")
+        },
+        {
+            path:'/movie/nowShow',
+            name:'nowShow',
+            component:()=>import("@/components/nowShow")
+        },
+        {
+            path:'detail/:movieId',
+            components:{
+                // default:()=>import ("@/components/nowShow"),
+                detail:()=>import("@/views/movies/detail")
+            },
+            props:{
+                detail:true
+            }
+        },
+        {
+            path:'/movie/',
+            redirect:'/movie/nowShow'
+        }
+    ]
+}

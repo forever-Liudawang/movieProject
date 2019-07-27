@@ -1,0 +1,64 @@
+#tabBar{
+    border-top: 2px solid rgb(204, 199, 199);
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    #active{
+        color: red;
+    }
+    #cinema.router-link-active{
+        div{
+            background:url('../../assets/cinema-red.png') no-repeat center;
+            background-size: 40px;
+        }
+        span{
+            color: red;
+        }
+    }
+    #my.router-link-active{
+        div{
+            background:url('../../assets/my-red.png') no-repeat center;
+            background-size: 40px;
+        }
+        span{
+            color: red;
+        }
+    }
+    #movie.router-link-active{
+        div{
+            background:url('../../assets/movie-red.png') no-repeat center;
+            background-size: 40px;
+        }
+        span{
+            color: red;
+        }   
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        span{
+            font-size: 26px;
+        }
+        .imgCin,.imgMy,.imgMov{
+            width: 40px;
+            height: 40px;
+            background: url('../../assets/cinema.png') no-repeat center;
+            background-size: 40px;
+        }
+        .imgMy{
+            background: url('../../assets/my.png') no-repeat center;
+            background-size: 40px;
+        }
+        .imgMov{
+            background: url('../../assets/movie.png') no-repeat center;
+            background-size: 40px;
+        }
+    }
+}

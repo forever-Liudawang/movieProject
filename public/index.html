@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>m-movie</title>
+    <link rel="stylesheet" href="<%= BASE_URL %>reset.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>libs/swiper/swiper.min.css">
+    <script src="<%= BASE_URL %>libs/swiper/min.js"></script>
+    <style>
+      #app{
+        display: flex;
+        height: 100%;
+      }
+      #app {margin: auto}
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but m-movie doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <script src="//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js"></script>
+    <script>
+      window.onload = function() {
+        window.viewportUnitsBuggyfill.init({
+            hacks: window.viewportUnitsBuggyfillHacks
+        });
+    }
+    </script>
+       
+    <div id="app">
+      <h3>小喵正在努力加载中...</h3>
+    </div>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>

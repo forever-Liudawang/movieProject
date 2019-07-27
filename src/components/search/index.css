@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.wrap .search {
+  width: 100%;
+  height: 100px;
+  padding: 16px 16px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  background-color: #f0ecec;
+}
+
+.wrap .search #inp {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.wrap .search #inp::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../../assets/倒三角形.png") no-repeat center;
+  background-size: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+.wrap .nav {
+  padding: 18px;
+  border-bottom: 1px solid #dbd7d7;
+  color: #cfcccc;
+}
+
+.wrap .moviePost {
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #cfc2c2;
+  position: relative;
+}
+
+.wrap .moviePost .img {
+  width: 130px;
+}
+
+.wrap .moviePost .img img {
+  width: 100%;
+}
+
+.wrap .moviePost .detail {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 22px;
+  color: #7c7474;
+  height: 180px;
+  width: 450px;
+}
+
+.wrap .moviePost .detail .score span {
+  font-weight: bold;
+  color: #ffa600;
+}
+
+.wrap .moviePost .detail .star {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap .moviePost .detail h3 {
+  margin: 0;
+}
+
+.wrap .moviePost .IMAX {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+
+.wrap .moviePost .getTicket {
+  position: absolute;
+  right: 8px;
+  font-size: 22px;
+  padding: 10px 18px;
+  background: red;
+  color: #fff;
+  border-radius: 10px;
+}

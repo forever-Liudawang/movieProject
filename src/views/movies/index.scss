@@ -1,0 +1,52 @@
+.bigWrapper{
+    width: 100%;
+    #nav{
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // border-bottom: 2px solid rgb(214, 206, 206);
+        font-weight: 600;
+        color: rgb(88, 82, 82);
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+        top: 100px;
+        div{
+            padding: 18px 0;
+          
+        }
+        .router-link-active{
+                border-bottom: 4px solid rgb(221, 59, 59);
+        }
+        .city::after{
+            content: "";
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url('../../assets/倒三角形.png') no-repeat bottom;
+            background-size: 24px;
+        }
+        .search{
+            img{
+                width: 40px;
+            }
+            
+        }
+    }
+    #nav::after{
+        content: "";
+        width: 100%;
+        border-bottom: 1px solid #f0eded;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+    
+    
+    
+        .viewBox{
+        padding-top: 170px;
+        }
+    
+}
